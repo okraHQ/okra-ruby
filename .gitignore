@@ -1,0 +1,17 @@
+/.bundle/
+/.yardoc
+/_yardoc/
+/coverage/
+/doc/
+/pkg/
+/spec/reports/
+/tmp/
+
+# rspec failure tracking
+.rspec_status
+auth_test.rb
+identity_test.rb
+bank_test.rb
+balance_test.rb
+account_test.rb
+payment_test.rb
