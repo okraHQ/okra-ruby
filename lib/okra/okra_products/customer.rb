@@ -12,7 +12,7 @@ class Customer < Base
 
     def fetch_customer_by_field(data)
         base_url = okra_object.base_url
-        #check the currency to determine the type and the required parameters
+        #certain that the required parameters are passed
         required_params = ["value", "key"] 
         check_passed_parameters(required_params, data)
         payload = data.to_json
@@ -22,7 +22,7 @@ class Customer < Base
 
     def remove_customer(data)
         base_url = okra_object.base_url
-        #check the currency to determine the type and the required parameters
+        #certain that the required parameters are passed
         required_params = ["customer"] 
         check_passed_parameters(required_params, data)
         payload = data.to_json
@@ -32,7 +32,7 @@ class Customer < Base
 
     def flag_customer(data)
         base_url = okra_object.base_url
-        #check the currency to determine the type and the required parameters
+        #certain that the required parameters are passed
         required_params = ["customer", "bank"] 
         check_passed_parameters(required_params, data)
         payload = data.to_json
@@ -46,7 +46,7 @@ class Customer < Base
 
     def generate_customer(data)
         base_url = okra_object.base_url
-        #check the currency to determine the type and the required parameters
+        #certain that the required parameters are passed
         required_params = ["number", "create"] 
         check_passed_parameters(required_params, data)
         payload = data.to_json
@@ -56,7 +56,7 @@ class Customer < Base
 
     def create_customer(data)
         base_url = okra_object.base_url
-        #check the currency to determine the type and the required parameters
+        #certain that the required parameters are passed
         required_params = ["noOfAccount", "name", "bank", "username", "password", "type", "volume", "identity", "internetSpeed"] 
         check_passed_parameters(required_params, data)
         payload = data.to_json
@@ -66,7 +66,7 @@ class Customer < Base
 
     def fetch_customer(data)
         base_url = okra_object.base_url
-        #check the currency to determine the type and the required parameters
+        #certain that the required parameters are passed
         required_params = ["customer"] 
         check_passed_parameters(required_params, data)
         payload = data.to_json

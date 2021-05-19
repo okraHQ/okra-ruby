@@ -14,4 +14,5 @@ identity_test.rb
 bank_test.rb
 balance_test.rb
 account_test.rb
-payment_test.rb.DS_Store
+payment_test.rb
+.DS_Store

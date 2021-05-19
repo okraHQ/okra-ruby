@@ -5,7 +5,7 @@ class Identity < Base
 
     def fetch_identities(data)
         base_url = okra_object.base_url
-        # check the currency to determine the type and the required parameters
+        #certain that the required parameters are passed
         required_params = ["page", "limit"] 
         check_passed_parameters(required_params, data)
         payload = data.to_json
@@ -15,7 +15,7 @@ class Identity < Base
 
     def get_by_id(data)
         base_url = okra_object.base_url
-        # check the currency to determine the type and the required parameters
+        #certain that the required parameters are passed
         required_params = ["id"] 
         check_passed_parameters(required_params, data)
         payload = data.to_json
@@ -25,7 +25,7 @@ class Identity < Base
 
     def get_by_customer(data)
         base_url = okra_object.base_url
-        #check the currency to determine the type and the required parameters
+        #certain that the required parameters are passed
         required_params = ["customer"] 
         check_passed_parameters(required_params, data)
         payload = data.to_json
@@ -35,7 +35,7 @@ class Identity < Base
 
     def get_by_date(data)
         base_url = okra_object.base_url
-        #check the currency to determine the type and the required parameters
+        #certain that the required parameters are passed
         required_params = ["from", "to"] 
         check_passed_parameters(required_params, data)
         payload = data.to_json
@@ -45,7 +45,7 @@ class Identity < Base
 
     def get_by_bank(data)
         base_url = okra_object.base_url
-        #check the currency to determine the type and the required parameters
+        #certain that the required parameters are passed
         required_params = ["bank"] 
         check_passed_parameters(required_params, data)
         payload = data.to_json
@@ -55,7 +55,7 @@ class Identity < Base
 
     def get_by_customerDate(data)
         base_url = okra_object.base_url
-        #check the currency to determine the type and the required parameters
+        #certain that the required parameters are passed
         required_params = ["to", "from", "customer"] 
         check_passed_parameters(required_params, data)
         payload = data.to_json
@@ -65,7 +65,7 @@ class Identity < Base
 
     def fetch_identity_by_nuban(data)
         base_url = okra_object.base_url
-        #check the currency to determine the type and the required parameters
+        #certain that the required parameters are passed
         required_params = ["bank", "nuban"] 
         check_passed_parameters(required_params, data)
         payload = data.to_json
@@ -75,7 +75,7 @@ class Identity < Base
 
     def rc_verify(data)
         base_url = okra_object.base_url
-        #check the currency to determine the type and the required parameters
+        #certain that the required parameters are passed
         required_params = ["rc_number", "company_name"] 
         check_passed_parameters(required_params, data)
         payload = data.to_json
@@ -85,7 +85,7 @@ class Identity < Base
 
     def rc_tin_verify(data)
         base_url = okra_object.base_url
-        #check the currency to determine the type and the required parameters
+        #certain that the required parameters are passed
         required_params = ["rc_number", "company_name", "tin_number"] 
         check_passed_parameters(required_params, data)
         payload = data.to_json
@@ -95,7 +95,7 @@ class Identity < Base
 
     def tin_verify(data)
         base_url = okra_object.base_url
-        #check the currency to determine the type and the required parameters
+        #certain that the required parameters are passed
         required_params = ["company_name", "tin_number"] 
         check_passed_parameters(required_params, data)
         payload = data.to_json

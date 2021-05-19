@@ -5,7 +5,7 @@ class Payment < Base
 
     def generate_payment_link(data)
         base_url = okra_object.base_url
-        # check the currency to determine the type and the required parameters
+        #certain that the required parameters are passed
         required_params = ["amount", "name", "currency", "account", "countries", "note", "type"] 
         check_passed_parameters(required_params, data)
         payload = data.to_json
@@ -15,7 +15,7 @@ class Payment < Base
 
     def create_a_charge(data)
         base_url = okra_object.base_url
-        # check the currency to determine the type and the required parameters
+        #certain that the required parameters are passed
         required_params = ["amount", "currency", "account_to_debit"] 
         check_passed_parameters(required_params, data)
         payload = data.to_json
@@ -25,7 +25,7 @@ class Payment < Base
 
     def initiate_future_charge(data)
         base_url = okra_object.base_url
-        # check the currency to determine the type and the required parameters
+        #certain that the required parameters are passed
         required_params = ["amount", "currency", "authorization"] 
         check_passed_parameters(required_params, data)
         payload = data.to_json
@@ -35,7 +35,7 @@ class Payment < Base
 
     def cancel_future_charge(data)
         base_url = okra_object.base_url
-        # check the currency to determine the type and the required parameters
+        #certain that the required parameters are passed
         required_params = ["link", "customer", "authorization", "account"] 
         check_passed_parameters(required_params, data)
         payload = data.to_json
@@ -45,7 +45,7 @@ class Payment < Base
 
     def reauth_future_payment(data)
         base_url = okra_object.base_url
-        # check the currency to determine the type and the required parameters
+        #certain that the required parameters are passed
         required_params = ["link", "customer", "authorization", "account"] 
         check_passed_parameters(required_params, data)
         payload = data.to_json
@@ -62,7 +62,7 @@ class Payment < Base
 
     def verify_payment(payment_id)
         base_url = okra_object.base_url
-        # check the currency to determine the type and the required parameters
+        #certain that the required parameters are passed
         required_params = ["payment_id"] 
         check_passed_parameters(required_params, data)
         payload = data.to_json
@@ -72,7 +72,7 @@ class Payment < Base
 
     def refund_payment(payment_id)
         base_url = okra_object.base_url
-        # check the currency to determine the type and the required parameters
+        #certain that the required parameters are passed
         required_params = ["payment_id"] 
         check_passed_parameters(required_params, data)
         payload = data.to_json
@@ -82,7 +82,7 @@ class Payment < Base
 
     def cancel_payment(payment_id)
         base_url = okra_object.base_url
-        # check the currency to determine the type and the required parameters
+        #certain that the required parameters are passed
         required_params = ["payment_id"] 
         check_passed_parameters(required_params, data)
         payload = data.to_json
@@ -92,7 +92,7 @@ class Payment < Base
 
     def get_all_payment(payment_id)
         base_url = okra_object.base_url
-        # check the currency to determine the type and the required parameters
+        #certain that the required parameters are passed
         required_params = ["payment_id"] 
         check_passed_parameters(required_params, data)
         payload = data.to_json
@@ -102,7 +102,7 @@ class Payment < Base
 
     def get_payment_by_id(payment_id)
         base_url = okra_object.base_url
-        # check the currency to determine the type and the required parameters
+        #certain that the required parameters are passed
         required_params = ["payment_id"] 
         check_passed_parameters(required_params, data)
         payload = data.to_json

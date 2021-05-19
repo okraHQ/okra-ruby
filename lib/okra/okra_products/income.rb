@@ -5,7 +5,7 @@ class Income < Base
 
     def fetch_income(data)
         base_url = okra_object.base_url
-        # check the currency to determine the type and the required parameters
+        #certain that the required parameters are passed
         required_params = ["page", "limit"] 
         check_passed_parameters(required_params, data)
         payload = data.to_json
@@ -15,7 +15,7 @@ class Income < Base
 
     def process_income(data)
         base_url = okra_object.base_url
-        #check the currency to determine the type and the required parameters
+        #certain that the required parameters are passed
         required_params = ["customer_id"] 
         check_passed_parameters(required_params, data)
         payload = data.to_json
@@ -25,7 +25,7 @@ class Income < Base
 
     def get_by_id(data)
         base_url = okra_object.base_url
-        # check the currency to determine the type and the required parameters
+        #certain that the required parameters are passed
         required_params = ["id"] 
         check_passed_parameters(required_params, data)
         payload = data.to_json
@@ -35,7 +35,7 @@ class Income < Base
 
     def get_by_customer(data)
         base_url = okra_object.base_url
-        #check the currency to determine the type and the required parameters
+        #certain that the required parameters are passed
         required_params = ["customer"] 
         check_passed_parameters(required_params, data)
         payload = data.to_json
@@ -45,7 +45,7 @@ class Income < Base
 
     def get_by_date(data)
         base_url = okra_object.base_url
-        #check the currency to determine the type and the required parameters
+        #certain that the required parameters are passed
         required_params = ["from", "to"] 
         check_passed_parameters(required_params, data)
         payload = data.to_json
@@ -55,7 +55,7 @@ class Income < Base
 
     def get_by_customerDate(data)
         base_url = okra_object.base_url
-        #check the currency to determine the type and the required parameters
+        #certain that the required parameters are passed
         required_params = ["to", "from", "customer"] 
         check_passed_parameters(required_params, data)
         payload = data.to_json

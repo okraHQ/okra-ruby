@@ -5,7 +5,7 @@ class OtherProducts < Base
 
     def selfie_verification(data)
         base_url = okra_object.base_url
-        #check the currency to determine the type and the required parameters
+        #certain that the required parameters are passed
         required_params = ["photo"] 
         check_passed_parameters(required_params, data)
         payload = data.to_json
@@ -15,7 +15,7 @@ class OtherProducts < Base
 
     def debit_to_credit_score(data)
         base_url = okra_object.base_url
-        #check the currency to determine the type and the required parameters
+        #certain that the required parameters are passed
         required_params = ["customer"] 
         check_passed_parameters(required_params, data)
         payload = data.to_json
@@ -25,7 +25,7 @@ class OtherProducts < Base
 
     def fetch_total_debits_and_credits(data)
         base_url = okra_object.base_url
-        #check the currency to determine the type and the required parameters
+        #certain that the required parameters are passed
         required_params = ["account"] 
         check_passed_parameters(required_params, data)
         payload = data.to_json
@@ -35,7 +35,7 @@ class OtherProducts < Base
 
     def benefactors(data)
         base_url = okra_object.base_url
-        #check the currency to determine the type and the required parameters
+        #certain that the required parameters are passed
         required_params = ["account", "customer", "bank"] 
         check_passed_parameters(required_params, data)
         payload = data.to_json
@@ -45,7 +45,7 @@ class OtherProducts < Base
 
     def transaction_networks(data)
         base_url = okra_object.base_url
-        #check the currency to determine the type and the required parameters
+        #certain that the required parameters are passed
         required_params = ["account", "customer"] 
         check_passed_parameters(required_params, data)
         payload = data.to_json
@@ -55,7 +55,7 @@ class OtherProducts < Base
 
     def spending_patterns(data)
         base_url = okra_object.base_url
-        #check the currency to determine the type and the required parameters
+        #certain that the required parameters are passed
         required_params = ["account", "customer"] 
         check_passed_parameters(required_params, data)
         payload = data.to_json
@@ -65,7 +65,7 @@ class OtherProducts < Base
 
     def complete_view(data)
         base_url = okra_object.base_url
-        #check the currency to determine the type and the required parameters
+        #certain that the required parameters are passed
         required_params = ["bvn", "customer"] 
         check_passed_parameters(required_params, data)
         payload = data.to_json
@@ -75,7 +75,7 @@ class OtherProducts < Base
 
     def request_guarantors(data)
         base_url = okra_object.base_url
-        #check the currency to determine the type and the required parameters
+        #certain that the required parameters are passed
         required_params = ["guarantors", "customer"] 
         check_passed_parameters(required_params, data)
         payload = data.to_json
@@ -85,7 +85,7 @@ class OtherProducts < Base
 
     def product_records(data)
         base_url = okra_object.base_url
-        #check the currency to determine the type and the required parameters
+        #certain that the required parameters are passed
         required_params = ["record_id"] 
         check_passed_parameters(required_params, data)
         payload = data.to_json
@@ -95,7 +95,7 @@ class OtherProducts < Base
 
     def get_records_by_customersBank(data)
         base_url = okra_object.base_url
-        #check the currency to determine the type and the required parameters
+        #certain that the required parameters are passed
         required_params = ["record_id"] 
         check_passed_parameters(required_params, data)
         payload = data.to_json

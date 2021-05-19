@@ -5,7 +5,7 @@ class Balance < Base
 
     def fetch_balance(data)
         base_url = okra_object.base_url
-        # check the currency to determine the type and the required parameters
+        #certain that the required parameters are passed
         required_params = ["page", "limit"] 
         check_passed_parameters(required_params, data)
         payload = data.to_json
@@ -15,7 +15,7 @@ class Balance < Base
 
     def get_by_id(data)
         base_url = okra_object.base_url
-        # check the currency to determine the type and the required parameters
+        #certain that the required parameters are passed
         required_params = ["id"] 
         check_passed_parameters(required_params, data)
         payload = data.to_json
@@ -25,7 +25,7 @@ class Balance < Base
 
     def get_by_customer(data)
         base_url = okra_object.base_url
-        #check the currency to determine the type and the required parameters
+        #certain that the required parameters are passed
         required_params = ["customer"] 
         check_passed_parameters(required_params, data)
         payload = data.to_json
@@ -35,7 +35,7 @@ class Balance < Base
 
     def get_by_date(data)
         base_url = okra_object.base_url
-        #check the currency to determine the type and the required parameters
+        #certain that the required parameters are passed
         required_params = ["from", "to"] 
         check_passed_parameters(required_params, data)
         payload = data.to_json
@@ -45,7 +45,7 @@ class Balance < Base
 
     def get_by_account(data)
         base_url = okra_object.base_url
-        #check the currency to determine the type and the required parameters
+        #certain that the required parameters are passed
         required_params = ["bank"] 
         check_passed_parameters(required_params, data)
         payload = data.to_json
@@ -55,7 +55,7 @@ class Balance < Base
 
     def get_by_customerDate(data)
         base_url = okra_object.base_url
-        #check the currency to determine the type and the required parameters
+        #certain that the required parameters are passed
         required_params = ["to", "from", "customer"] 
         check_passed_parameters(required_params, data)
         payload = data.to_json
@@ -65,7 +65,7 @@ class Balance < Base
 
     def balance_refresh(account_id)
         base_url = okra_object.base_url
-        # check the currency to determine the type and the required parameters
+        #certain that the required parameters are passed
         required_params = ["account_id"] 
         check_passed_parameters(required_params, data)
         payload = data.to_json
@@ -75,7 +75,7 @@ class Balance < Base
 
     def balance_check(account_id)
         base_url = okra_object.base_url
-        # check the currency to determine the type and the required parameters
+        #certain that the required parameters are passed
         required_params = ["account_id"] 
         check_passed_parameters(required_params, data)
         payload = data.to_json
@@ -85,7 +85,7 @@ class Balance < Base
 
     def enhanced_balance(data)
         base_url = okra_object.base_url
-        #check the currency to determine the type and the required parameters
+        #certain that the required parameters are passed
         required_params = ["account_id", "customer_id"] 
         check_passed_parameters(required_params, data)
         payload = data.to_json
