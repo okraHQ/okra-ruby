@@ -5,12 +5,12 @@ require "okra/version"
 
 Gem::Specification.new do |spec|
   spec.name          = "okra-ruby"
-  spec.version       = Okra::Ruby::VERSION
+  spec.version       = Okra::VERSION
   spec.authors       = ["Iphytech"]
   spec.email         = ["ifavour902@gmail.com"]
 
-  spec.summary       = 'Ruby SDK for Okra'
-  spec.description   = 'Ruby gem for Okra API. Read more at the ' \ 'homepage, or documentation. '
+  spec.summary       = %q{Ruby SDK for Okra}
+  spec.description   = %q{Ruby gem for Okra API. Read more on the documentation.}
   spec.homepage      = 'https://okra.ng/'
   spec.license       = "MIT"
 
